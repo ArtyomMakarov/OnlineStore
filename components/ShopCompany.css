@@ -1,0 +1,64 @@
+
+.ShopCompany{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0px auto;
+}
+
+.shopName{
+    color: #071577;
+    margin: 35px 0px;
+}
+
+.addItem{
+    margin: 10px 0px 0px;
+    display: block;
+    font-size: 15px;
+    color: white;
+    background-color: blue;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 135px;
+}
+
+.addItem:hover{
+    background-color: #0618ab;
+}
+
+.filterItems{
+    display: block;
+    border: none;
+    font-size: 13px;
+    color: #999;
+    cursor: pointer;
+    outline: none;
+}
+
+.filterItems:hover{
+    color: #7a7a7a;
+}
+
+.pagination-wrapper{
+    width: 400px;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ShopCompanyHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-wrapper{
+    position: relative;
+}

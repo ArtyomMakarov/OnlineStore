@@ -1,0 +1,33 @@
+.cell{
+    border: 1px solid #e6e0e0;
+    padding: 15px;
+}
+
+.itemName{
+    font-weight: bolder;
+    font-size: 20px;
+    display: block;
+}
+
+.itemInfo{
+    font-size: 18px;
+}
+
+.itemPrice{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.controlButton{
+    height: 30px;
+    border: 0;
+    border-radius: 3px;
+    background-color: #e70;
+    color: white;
+    cursor: pointer;
+}
+
+.controlButton:hover{
+    background-color: #a01a05;
+}

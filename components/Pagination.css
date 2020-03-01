@@ -1,0 +1,19 @@
+.pagination {
+    list-style-type: none;
+    float: left;
+    margin: 0;
+}
+.page-item {
+    display: inline-block;
+    border: solid 1px;
+    background-color: #e5e5e5;
+    padding: 5px 10px;
+}
+.page-item:hover {
+    background-color: #FF6600 ;
+    color: white;
+}
+.page-link {
+    text-decoration: none;
+    color: #616161;
+}

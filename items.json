@@ -1,0 +1,417 @@
+{
+  "items": [
+    {
+      "name": "Телевизор Xiaomi MI TV 4S 4",
+      "price": 1000,
+      "img": "/img/4f0c6bfac7c079a9d16553db5f79e26b.jpeg",
+      "id": "5.733",
+      "info": "43' 3840x2160 (4K UHD), матрица IPS, частота матрицы 50 Гц, Smart TV (Android TV), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор KIVI 50U600GR",
+      "price": 825,
+      "img": "/img/274411e4bba826a578b961694687839f.jpeg",
+      "id": "5.704",
+      "info": "50' 3840x2160 (4K UHD), матрица VA, частота матрицы 50 Гц, Smart TV (Android), Wi-Fi"
+    },
+    {
+      "name": "Телевизор Thomson T32RTL5130",
+      "price": 380,
+      "img": "/img/c71d624ec102b9792dbc52bb416d78f8.png",
+      "id": "5.7042",
+      "info": "32' 1366x768 (HD), частота матрицы 50 Гц, Smart TV (Android), Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 32LM6350PLA",
+      "price": 679.32,
+      "img": "/img/ee9a41059c5c3108bf2f5a2f27e45ab7.jpeg",
+      "id": "679.32",
+      "info": "32' 1920x1080 (Full HD), частота матрицы 50 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 55UM7300PLB",
+      "price": 1119.8,
+      "img": "/img/0a03409161c5311def02692f577b4f40.jpeg",
+      "id": "1119.80",
+      "info": "55' 3840x2160 (4K UHD), матрица IPS, частота матрицы 50 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Samsung UE32N5300AU",
+      "price": 572.8,
+      "img": "/img/1e0a4d4b1f5455f93db9b95dd2bdf605.jpeg",
+      "id": "572.80",
+      "info": "32' 1920x1080 (Full HD), частота матрицы 50 Гц, индекс динамичных сцен 500, Smart TV (Samsung Tizen), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 49SM9000PLA",
+      "price": 1550,
+      "img": "/img/7583b17ef7ce7ef7c76e73e582ccf58b.jpeg",
+      "id": "1550",
+      "info": "49' 3840x2160 (4K UHD), матрица IPS, частота матрицы 100 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 32LM570BPLA",
+      "price": 496.74,
+      "img": "/img/777e12d9ad7b7455dd92e9055626a191.jpeg",
+      "id": "496.74",
+      "info": "32' 1366x768 (HD), частота матрицы 50 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Samsung UE55RU8000U",
+      "price": 1799.94,
+      "img": "/img/01e29dc7f95ee22c12ac3a6319e5673e.jpeg",
+      "id": "1799.94",
+      "info": "55' 3840x2160 (4K UHD), матрица VA, частота матрицы 100 Гц, индекс динамичных сцен 2500, Smart TV (Samsung Tizen), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Samsung UE55RU7470U",
+      "price": 1599,
+      "img": "/img/091ec973cc15e8d877cae5ee3d2476eb.jpeg",
+      "id": "651.473",
+      "info": "55' 3840x2160 (4K UHD), матрица VA, частота матрицы 50 Гц, индекс динамичных сцен 1900, Smart TV (Samsung Tizen), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Xiaomi MI TV 4S 43",
+      "price": 904,
+      "img": "/img/4f0c6bfac7c079a9d16553db5f79e26b.jpeg",
+      "id": "52.733",
+      "info": "43' 3840x2160 (4K UHD), матрица IPS, частота матрицы 50 Гц, Smart TV (Android TV), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор KIVI 50U600GR",
+      "price": 855,
+      "img": "/img/274411e4bba826a578b961694687839f.jpeg",
+      "id": "53.704",
+      "info": "50' 3840x2160 (4K UHD), матрица VA, частота матрицы 50 Гц, Smart TV (Android), Wi-Fi"
+    },
+    {
+      "name": "Телевизор Thomson T32RTL5130",
+      "price": 360,
+      "img": "/img/c71d624ec102b9792dbc52bb416d78f8.png",
+      "id": "54.7042",
+      "info": "32' 1366x768 (HD), частота матрицы 50 Гц, Smart TV (Android), Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 32LM6350PLA",
+      "price": 479.32,
+      "img": "/img/ee9a41059c5c3108bf2f5a2f27e45ab7.jpeg",
+      "id": "6759.32",
+      "info": "32' 1920x1080 (Full HD), частота матрицы 50 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 55UM7300PLB",
+      "price": 1619.8,
+      "img": "/img/0a03409161c5311def02692f577b4f40.jpeg",
+      "id": "11619.80",
+      "info": "55' 3840x2160 (4K UHD), матрица IPS, частота матрицы 50 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Samsung UE32N5300AU",
+      "price": 552.8,
+      "img": "/img/1e0a4d4b1f5455f93db9b95dd2bdf605.jpeg",
+      "id": "5724.80",
+      "info": "32' 1920x1080 (Full HD), частота матрицы 50 Гц, индекс динамичных сцен 500, Smart TV (Samsung Tizen), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 49SM9000PLA",
+      "price": 1560,
+      "img": "/img/7583b17ef7ce7ef7c76e73e582ccf58b.jpeg",
+      "id": "15550",
+      "info": "49' 3840x2160 (4K UHD), матрица IPS, частота матрицы 100 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 32LM570BPLA",
+      "price": 497.74,
+      "img": "/img/777e12d9ad7b7455dd92e9055626a191.jpeg",
+      "id": "4946.74",
+      "info": "32' 1366x768 (HD), частота матрицы 50 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Samsung UE55RU8000U",
+      "price": 1739.94,
+      "img": "/img/01e29dc7f95ee22c12ac3a6319e5673e.jpeg",
+      "id": "17699.94",
+      "info": "55' 3840x2160 (4K UHD), матрица VA, частота матрицы 100 Гц, индекс динамичных сцен 2500, Smart TV (Samsung Tizen), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Samsung UE55RU7470U",
+      "price": 1439,
+      "img": "/img/091ec973cc15e8d877cae5ee3d2476eb.jpeg",
+      "id": "621.473",
+      "info": "55' 3840x2160 (4K UHD), матрица VA, частота матрицы 50 Гц, индекс динамичных сцен 1900, Smart TV (Samsung Tizen), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Xiaomi MI TV 4S 43",
+      "price": 9067,
+      "img": "/img/4f0c6bfac7c079a9d16553db5f79e26b.jpeg",
+      "id": "58.733",
+      "info": "43' 3840x2160 (4K UHD), матрица IPS, частота матрицы 50 Гц, Smart TV (Android TV), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор KIVI 50U600GR",
+      "price": 812,
+      "img": "/img/274411e4bba826a578b961694687839f.jpeg",
+      "id": "53.708",
+      "info": "50' 3840x2160 (4K UHD), матрица VA, частота матрицы 50 Гц, Smart TV (Android), Wi-Fi"
+    },
+    {
+      "name": "Телевизор Thomson T32RTL5130",
+      "price": 5350,
+      "img": "/img/c71d624ec102b9792dbc52bb416d78f8.png",
+      "id": "567.7042",
+      "info": "32' 1366x768 (HD), частота матрицы 50 Гц, Smart TV (Android), Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 32LM6350PLA",
+      "price": 479.354,
+      "img": "/img/ee9a41059c5c3108bf2f5a2f27e45ab7.jpeg",
+      "id": "6569.32",
+      "info": "32' 1920x1080 (Full HD), частота матрицы 50 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 55UM7300PLB",
+      "price": 1634.8,
+      "img": "/img/0a03409161c5311def02692f577b4f40.jpeg",
+      "id": "19619.80",
+      "info": "55' 3840x2160 (4K UHD), матрица IPS, частота матрицы 50 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Samsung UE32N5300AU",
+      "price": 2342.8,
+      "img": "/img/1e0a4d4b1f5455f93db9b95dd2bdf605.jpeg",
+      "id": "5756.80",
+      "info": "32' 1920x1080 (Full HD), частота матрицы 50 Гц, индекс динамичных сцен 500, Smart TV (Samsung Tizen), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 49SM9000PLA",
+      "price": 1340,
+      "img": "/img/7583b17ef7ce7ef7c76e73e582ccf58b.jpeg",
+      "id": "156",
+      "info": "49' 3840x2160 (4K UHD), матрица IPS, частота матрицы 100 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 32LM570BPLA",
+      "price": 4343.74,
+      "img": "/img/777e12d9ad7b7455dd92e9055626a191.jpeg",
+      "id": "47657446.74",
+      "info": "32' 1366x768 (HD), частота матрицы 50 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Samsung UE55RU8000U",
+      "price": 1239.94,
+      "img": "/img/01e29dc7f95ee22c12ac3a6319e5673e.jpeg",
+      "id": "176349.94",
+      "info": "55' 3840x2160 (4K UHD), матрица VA, частота матрицы 100 Гц, индекс динамичных сцен 2500, Smart TV (Samsung Tizen), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Samsung UE55RU7470U",
+      "price": 1349,
+      "img": "/img/091ec973cc15e8d877cae5ee3d2476eb.jpeg",
+      "id": "621.43453",
+      "info": "55' 3840x2160 (4K UHD), матрица VA, частота матрицы 50 Гц, индекс динамичных сцен 1900, Smart TV (Samsung Tizen), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Xiaomi MI TV 4S 43",
+      "price": 93457,
+      "img": "/img/4f0c6bfac7c079a9d16553db5f79e26b.jpeg",
+      "id": "58.553",
+      "info": "43' 3840x2160 (4K UHD), матрица IPS, частота матрицы 50 Гц, Smart TV (Android TV), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор KIVI 50U600GR",
+      "price": 843,
+      "img": "/img/274411e4bba826a578b961694687839f.jpeg",
+      "id": "53.668",
+      "info": "50' 3840x2160 (4K UHD), матрица VA, частота матрицы 50 Гц, Smart TV (Android), Wi-Fi"
+    },
+    {
+      "name": "Телевизор Thomson T32RTL5130",
+      "price": 2350,
+      "img": "/img/c71d624ec102b9792dbc52bb416d78f8.png",
+      "id": "577.7042",
+      "info": "32' 1366x768 (HD), частота матрицы 50 Гц, Smart TV (Android), Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 32LM6350PLA",
+      "price": 2779.354,
+      "img": "/img/ee9a41059c5c3108bf2f5a2f27e45ab7.jpeg",
+      "id": "5569.32",
+      "info": "32' 1920x1080 (Full HD), частота матрицы 50 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 55UM7300PLB",
+      "price": 1664.8,
+      "img": "/img/0a03409161c5311def02692f577b4f40.jpeg",
+      "id": "13319.80",
+      "info": "55' 3840x2160 (4K UHD), матрица IPS, частота матрицы 50 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Samsung UE32N5300AU",
+      "price": 6342.8,
+      "img": "/img/1e0a4d4b1f5455f93db9b95dd2bdf605.jpeg",
+      "id": "4456.80",
+      "info": "32' 1920x1080 (Full HD), частота матрицы 50 Гц, индекс динамичных сцен 500, Smart TV (Samsung Tizen), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 49SM9000PLA",
+      "price": 1670,
+      "img": "/img/7583b17ef7ce7ef7c76e73e582ccf58b.jpeg",
+      "id": "177",
+      "info": "49' 3840x2160 (4K UHD), матрица IPS, частота матрицы 100 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 32LM570BPLA",
+      "price": 4673.74,
+      "img": "/img/777e12d9ad7b7455dd92e9055626a191.jpeg",
+      "id": "4556567446.74",
+      "info": "32' 1366x768 (HD), частота матрицы 50 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Samsung UE55RU8000U",
+      "price": 1679.94,
+      "img": "/img/01e29dc7f95ee22c12ac3a6319e5673e.jpeg",
+      "id": "1669.94",
+      "info": "55' 3840x2160 (4K UHD), матрица VA, частота матрицы 100 Гц, индекс динамичных сцен 2500, Smart TV (Samsung Tizen), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Samsung UE55RU7470U",
+      "price": 1229,
+      "img": "/img/091ec973cc15e8d877cae5ee3d2476eb.jpeg",
+      "id": "621.1153",
+      "info": "55' 3840x2160 (4K UHD), матрица VA, частота матрицы 50 Гц, индекс динамичных сцен 1900, Smart TV (Samsung Tizen), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Xiaomi MI TV 4S 43",
+      "price": 927,
+      "img": "/img/4f0c6bfac7c079a9d16553db5f79e26b.jpeg",
+      "id": "58.533",
+      "info": "43' 3840x2160 (4K UHD), матрица IPS, частота матрицы 50 Гц, Smart TV (Android TV), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор KIVI 50U600GR",
+      "price": 453,
+      "img": "/img/274411e4bba826a578b961694687839f.jpeg",
+      "id": "01.668",
+      "info": "50' 3840x2160 (4K UHD), матрица VA, частота матрицы 50 Гц, Smart TV (Android), Wi-Fi"
+    },
+    {
+      "name": "Телевизор Thomson T32RTL5130",
+      "price": 7850,
+      "img": "/img/c71d624ec102b9792dbc52bb416d78f8.png",
+      "id": "502.7042",
+      "info": "32' 1366x768 (HD), частота матрицы 50 Гц, Smart TV (Android), Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 32LM6350PLA",
+      "price": 2779.384,
+      "img": "/img/ee9a41059c5c3108bf2f5a2f27e45ab7.jpeg",
+      "id": "504.32",
+      "info": "32' 1920x1080 (Full HD), частота матрицы 50 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 55UM7300PLB",
+      "price": 1286.8,
+      "img": "/img/0a03409161c5311def02692f577b4f40.jpeg",
+      "id": "1059.80",
+      "info": "55' 3840x2160 (4K UHD), матрица IPS, частота матрицы 50 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Samsung UE32N5300AU",
+      "price": 6342.7,
+      "img": "/img/1e0a4d4b1f5455f93db9b95dd2bdf605.jpeg",
+      "id": "4066.80",
+      "info": "32' 1920x1080 (Full HD), частота матрицы 50 Гц, индекс динамичных сцен 500, Smart TV (Samsung Tizen), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 49SM9000PLA",
+      "price": 1345,
+      "img": "/img/7583b17ef7ce7ef7c76e73e582ccf58b.jpeg",
+      "id": "107",
+      "info": "49' 3840x2160 (4K UHD), матрица IPS, частота матрицы 100 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 32LM570BPLA",
+      "price": 4643.74,
+      "img": "/img/777e12d9ad7b7455dd92e9055626a191.jpeg",
+      "id": "0856567446.74",
+      "info": "32' 1366x768 (HD), частота матрицы 50 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Samsung UE55RU8000U",
+      "price": 1629.94,
+      "img": "/img/01e29dc7f95ee22c12ac3a6319e5673e.jpeg",
+      "id": "1099.94",
+      "info": "55' 3840x2160 (4K UHD), матрица VA, частота матрицы 100 Гц, индекс динамичных сцен 2500, Smart TV (Samsung Tizen), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Samsung UE55RU7470U",
+      "price": 1009,
+      "img": "/img/091ec973cc15e8d877cae5ee3d2476eb.jpeg",
+      "id": "621.101",
+      "info": "55' 3840x2160 (4K UHD), матрица VA, частота матрицы 50 Гц, индекс динамичных сцен 1900, Smart TV (Samsung Tizen), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Xiaomi MI TV 4S 43",
+      "price": 1000,
+      "img": "/img/4f0c6bfac7c079a9d16553db5f79e26b.jpeg",
+      "id": "58.5302",
+      "info": "43' 3840x2160 (4K UHD), матрица IPS, частота матрицы 50 Гц, Smart TV (Android TV), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор KIVI 50U600GR",
+      "price": 2000,
+      "img": "/img/274411e4bba826a578b961694687839f.jpeg",
+      "id": "01.03",
+      "info": "50' 3840x2160 (4K UHD), матрица VA, частота матрицы 50 Гц, Smart TV (Android), Wi-Fi"
+    },
+    {
+      "name": "Телевизор Thomson T32RTL5130",
+      "price": 3000,
+      "img": "/img/c71d624ec102b9792dbc52bb416d78f8.png",
+      "id": "502.04",
+      "info": "32' 1366x768 (HD), частота матрицы 50 Гц, Smart TV (Android), Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 32LM6350PLA",
+      "price": 222.384,
+      "img": "/img/ee9a41059c5c3108bf2f5a2f27e45ab7.jpeg",
+      "id": "504.05",
+      "info": "32' 1920x1080 (Full HD), частота матрицы 50 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 55UM7300PLB",
+      "price": 1247.8,
+      "img": "/img/0a03409161c5311def02692f577b4f40.jpeg",
+      "id": "1059.66",
+      "info": "55' 3840x2160 (4K UHD), матрица IPS, частота матрицы 50 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Samsung UE32N5300AU",
+      "price": 6842.7,
+      "img": "/img/1e0a4d4b1f5455f93db9b95dd2bdf605.jpeg",
+      "id": "40786.80",
+      "info": "32' 1920x1080 (Full HD), частота матрицы 50 Гц, индекс динамичных сцен 500, Smart TV (Samsung Tizen), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 49SM9000PLA",
+      "price": 1300,
+      "img": "/img/7583b17ef7ce7ef7c76e73e582ccf58b.jpeg",
+      "id": "111",
+      "info": "49' 3840x2160 (4K UHD), матрица IPS, частота матрицы 100 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор LG 32LM570BPLA",
+      "price": 4600.74,
+      "img": "/img/777e12d9ad7b7455dd92e9055626a191.jpeg",
+      "id": "1856567446.74",
+      "info": "32' 1366x768 (HD), частота матрицы 50 Гц, Smart TV (LG webOS), HDR, Wi-Fi"
+    },
+    {
+      "name": "Телевизор Samsung UE55RU8000U",
+      "price": 1625.94,
+      "img": "/img/01e29dc7f95ee22c12ac3a6319e5673e.jpeg",
+      "id": "1299.94",
+      "info": "55' 3840x2160 (4K UHD), матрица VA, частота матрицы 100 Гц, индекс динамичных сцен 2500, Smart TV (Samsung Tizen), HDR, Wi-Fi"
+    }
+  ]
+}
