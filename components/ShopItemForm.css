@@ -87,6 +87,17 @@ body{
     background-color: #004e9a;
 }
 
+.modalButton:disabled{
+    background-color: darkgrey;
+    outline: none;
+    border: none;
+}
+
+.form-error{
+    color: red;
+    font-size: 20px;
+}
+
 
 
 

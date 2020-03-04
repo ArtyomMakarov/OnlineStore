@@ -62,3 +62,10 @@
 .filter-wrapper{
     position: relative;
 }
+
+@media all and (max-width: 1024px){
+    .addItem{
+        width: 100px;
+        font-size: 12px;
+    }
+}

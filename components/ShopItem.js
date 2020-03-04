@@ -48,7 +48,7 @@ class ShopItem extends React.PureComponent {
         console.log("ShopItem id=" + this.state.item.id + "render");
         return (
             <tr>
-                <td className='cell'><img src={this.props.item.img}/></td>
+                <td className='cell'><img src={this.props.item.img} className="itemImg"/></td>
                 <td className='cell'>
                     <span className="itemName">{this.props.item.name}</span>
                     <span className="itemInfo">{this.props.item.info}</span>

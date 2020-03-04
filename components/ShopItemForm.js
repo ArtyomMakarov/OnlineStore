@@ -19,6 +19,11 @@ class ShopItemForm extends React.PureComponent {
 
     state = {
         item: this.props.item,
+        isValid: true,
+    };
+
+    componentDidMount = () => {
+        this.props.mode==2?this.setState({isValid: false}): this.setState({isValid: true});
     };
 
     closeModal = () => {
@@ -29,7 +34,6 @@ class ShopItemForm extends React.PureComponent {
     newInfoRef =null;
     newImgRef= null;
     newPriceRef = null;
-
 
     setNewNameRef = (ref) => {
         this.newNameRef=ref;
@@ -45,6 +49,14 @@ class ShopItemForm extends React.PureComponent {
 
     setNewPriceRef = (ref) => {
         this.newPriceRef=ref;
+    };
+
+    validFunc = (e) => {
+        if(this.newNameRef.value && this.newInfoRef.value && this.newImgRef.value && this.newPriceRef.value) {
+            this.setState({isValid: true});
+        } else {
+            this.setState({isValid: false});
+        }
     };
 
     setNewItem = () => {
@@ -70,32 +82,31 @@ class ShopItemForm extends React.PureComponent {
                     <div className="close" onClick={this.closeModal}>+</div>
 
                     <h3>{this.props.mode==2?"Добавить новый товар":"Редактировать товар"}</h3>
-
                     <div className="modal-form">
-
+                        <div className="form-error" hidden={this.state.isValid}>Все поля должны быть заполнены!</div>
                         <span className="itemId">№: {this.props.item.id}</span>
 
                         <label className='inputArea'>
                             <span className="fieldName">Название товара:</span>
-                            <input type="text" name="name" className="inputField" ref={this.setNewNameRef} defaultValue={this.props.item.name}/>
+                            <input type="text" name="name" onChange={this.validFunc} className="inputField" ref={this.setNewNameRef} defaultValue={this.props.item.name}/>
                         </label>
 
                         <label className='inputArea'>
                             <span className="fieldName">Описание товара:</span>
-                            <textarea className="textField" ref={this.setNewInfoRef} defaultValue={this.props.item.info}></textarea>
+                            <textarea className="textField" ref={this.setNewInfoRef} onChange={this.validFunc} defaultValue={this.props.item.info}></textarea>
                         </label>
 
                         <label className='inputArea'>
                             <span className="fieldName">Цена:</span>
-                            <input type="text" name="price" className="inputField" ref={this.setNewPriceRef} defaultValue={this.props.item.price}/>
+                            <input type="text" name="price" className="inputField" onChange={this.validFunc} ref={this.setNewPriceRef} defaultValue={this.props.item.price}/>
                         </label>
 
                         <label className='inputArea'>
                             <span className="fieldName">Добавить URL фото:</span>
-                            <input type="text" name="price" className="inputField" ref={this.setNewImgRef} defaultValue={this.props.item.img}/>
+                            <input type="text" name="price" className="inputField" onChange={this.validFunc} ref={this.setNewImgRef} defaultValue={this.props.item.img}/>
                         </label>
 
-                        <input type="button" className="modalButton" onClick={this.setNewItem} value={this.props.mode==2?"Добавить":"Сохранить"}/>
+                        <input type="button" className="modalButton" disabled={!this.state.isValid} onClick={this.setNewItem} value={this.props.mode==2?"Добавить":"Сохранить"}/>
                     </div>
                 </div>
             </div>

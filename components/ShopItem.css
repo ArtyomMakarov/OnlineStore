@@ -31,3 +31,28 @@
 .controlButton:hover{
     background-color: #a01a05;
 }
+
+.itemImg{
+    max-width: 100%;
+}
+
+@media all and (max-width: 1024px){
+    .controlButton{
+        height: 20px;
+        font-size: 10px;
+    }
+    .cell{
+        padding: unset;
+    }
+    .itemName{
+        font-size: 15px;
+    }
+
+    .itemInfo{
+        font-size: 13px;
+    }
+
+    .itemPrice{
+        font-size: 13px;
+    }
+}

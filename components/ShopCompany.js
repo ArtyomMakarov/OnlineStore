@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import isoFetch from 'isomorphic-fetch';
 
 import ShopItem from './ShopItem';
@@ -11,15 +10,9 @@ import './ShopCompany.css';
 
 class ShopCompany extends React.PureComponent {
 
-    static propTypes = {
-        companyData: PropTypes.array.isRequired,
-        itemsLength: PropTypes.number.isRequired,
-    };
-
     state = {
-        items: this.props.companyData,
-        itemsLength: this.props.itemsLength,
-        pages: this.props.itemsLength/10,
+        items: [],
+        itemsLength: 0,
         itemsPerPage: 10,
         pagination: false,
         mode: 0,                        // 0-start, 1-edit, 2-add
@@ -28,11 +21,13 @@ class ShopCompany extends React.PureComponent {
     };
 
     componentDidMount = () => {
+        console.log(this.props.match.params.pageNumber);
+        this.loadPages();
+        this.getItemsLength();
         voteEvents.addListener('EEditItem',this.itemEdited);
         voteEvents.addListener('EDeleteItem',this.itemDeleted);
         voteEvents.addListener('ECancel', this.closeModal);
         voteEvents.addListener('EChangeItem', this.editItem);
-        this.loadPages();
     };
 
     componentWillUnmount = () => {
@@ -43,13 +38,29 @@ class ShopCompany extends React.PureComponent {
     };
 
     componentWillReceiveProps = () => {
+        console.log(this.props.match.params.pageNumber);
         this.loadPages();
     };
 
+    getItemsLength = () => {
+        isoFetch(`http://localhost:3000/items`)
+            .then(response => {
+                if (!response.ok)
+                    throw new Error("fetch error " + response.status);
+                else
+                    return response.json();
+            })
+            .then(data => {
+                this.setState({itemsLength: data.length});
+            })
+            .catch(error => {
+                this.fetchError(error.message);
+            })
+    };
+
     loadPages = () => {
-        if (this.props.match) {
             let pageNumber = parseInt(this.props.match.params.pageNumber);
-            if (this.props.match.params.pageNumber>0) {
+            if (pageNumber>0) {
                 isoFetch(`http://localhost:3000/items?_page=${pageNumber}`)
                     .then(response => {
                         if (!response.ok)
@@ -63,9 +74,20 @@ class ShopCompany extends React.PureComponent {
                     .catch(error => {
                         this.fetchError(error.message);
                     })
-            }
-        } else {
-            this.setState({pagination: false});
+            }else {
+                isoFetch(`http://localhost:3000/items`)
+                    .then(response => {
+                        if (!response.ok)
+                            throw new Error("fetch error " + response.status);
+                        else
+                            return response.json();
+                    })
+                    .then(data => {
+                        this.setState({items: data, pagination: false});
+                    })
+                    .catch(error => {
+                        this.fetchError(error.message);
+                    })
         }
     };
 
@@ -115,7 +137,8 @@ class ShopCompany extends React.PureComponent {
             });
         } else {
             let pageNumber = parseInt(this.props.match.params.pageNumber);
-            if (this.state.pagination && pageNumber!==this.state.pages) {
+            let pages = Math.ceil(this.state.itemsLength/this.state.itemsPerPage);
+            if (this.state.pagination && pageNumber!==pages) {
                 isoFetch("http://localhost:3000/items", {
                     method: 'POST',
                     body: JSON.stringify(newItem),
@@ -190,7 +213,7 @@ class ShopCompany extends React.PureComponent {
                     <div className="ShopCompanyHeader">
                         <input type="button" className="addItem" value="Добавить товар" onClick={this.addItem}/>
                         <div className="pagination-wrapper">
-                            <Pagination totalItems={this.props.itemsLength} itemsPerPage={this.state.itemsPerPage}/>
+                            <Pagination totalItems={this.state.itemsLength} itemsPerPage={this.state.itemsPerPage}/>
                         </div>
                         <div className="filter-wrapper">
                             <BasketButton/>

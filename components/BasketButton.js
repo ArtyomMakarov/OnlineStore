@@ -14,7 +14,6 @@ class BasketButton extends React.Component{
     };
 
     render() {
-        console.log(this.props.basket.basketItems);
         return(
             <div className="basket-wrapper">
                 <NavLink to="/basket" className="PageLink" activeClassName="ActivePageLink">Корзина</NavLink>
