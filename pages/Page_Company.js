@@ -1,13 +1,25 @@
 import React from 'react';
+import { withDataLoad } from '../components/withDataLoad';
+import ShopCompany from '../components/ShopCompany';
 
-import MainPage from '../core/MainPage';
+class Page_Company extends React.Component {
 
-class Page_Company extends React.PureComponent {
+    fetchConfig={
+        URL: "http://localhost:3000/items",
+        method: 'GET',
+        headers: {
+            "Accept": "application/json",
+        },
+    };
+
+    ShopCompanyWithData = withDataLoad(this.fetchConfig, "companyData")(ShopCompany);
 
     render() {
 
+        let ShopCompanyWithData = this.ShopCompanyWithData;
+
         return (
-            <MainPage/>
+            <ShopCompanyWithData/>
         );
     }
 }

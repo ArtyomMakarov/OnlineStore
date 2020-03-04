@@ -14,14 +14,14 @@ class ShopCompany extends React.PureComponent {
     static propTypes = {
         companyData: PropTypes.array.isRequired,
         itemsLength: PropTypes.number.isRequired,
-        // pageNumber: PropTypes.number.isRequired,
     };
 
     state = {
         items: this.props.companyData,
+        itemsLength: this.props.itemsLength,
+        pages: this.props.itemsLength/10,
         itemsPerPage: 10,
         pagination: false,
-        pagesItems: null,
         mode: 0,                        // 0-start, 1-edit, 2-add
         id: 0,
         key: 0,
@@ -32,7 +32,7 @@ class ShopCompany extends React.PureComponent {
         voteEvents.addListener('EDeleteItem',this.itemDeleted);
         voteEvents.addListener('ECancel', this.closeModal);
         voteEvents.addListener('EChangeItem', this.editItem);
-        voteEvents.addListener('EPaginate', this.paginate);
+        this.loadPages();
     };
 
     componentWillUnmount = () => {
@@ -40,27 +40,33 @@ class ShopCompany extends React.PureComponent {
         voteEvents.removeListener('EDeleteItem',this.itemDeleted);
         voteEvents.removeListener('ECancel', this.closeModal);
         voteEvents.removeListener('EChangeItem', this.editItem);
-        voteEvents.removeListener('EPaginate', this.paginate);
     };
 
-    paginate = () => {
-      if (this.props.match.params.pageNumber>0) {
-          isoFetch(`http://localhost:3000/items?_page=${this.props.match.params.pageNumber}`)
-              .then(response => {
-                  if (!response.ok)
-                      throw new Error("fetch error " + response.status);
-                  else
-                      return response.json();
-              })
-              .then( data => {
-                  this.setState({items: data, pagination: true});
-              })
-              .catch( error => {
-                  this.fetchError(error.message);
-              })
-      } else {
-          this.setState({pagination: false});
-      }
+    componentWillReceiveProps = () => {
+        this.loadPages();
+    };
+
+    loadPages = () => {
+        if (this.props.match) {
+            let pageNumber = parseInt(this.props.match.params.pageNumber);
+            if (this.props.match.params.pageNumber>0) {
+                isoFetch(`http://localhost:3000/items?_page=${pageNumber}`)
+                    .then(response => {
+                        if (!response.ok)
+                            throw new Error("fetch error " + response.status);
+                        else
+                            return response.json();
+                    })
+                    .then(data => {
+                        this.setState({items: data, pagination: true});
+                    })
+                    .catch(error => {
+                        this.fetchError(error.message);
+                    })
+            }
+        } else {
+            this.setState({pagination: false});
+        }
     };
 
     itemEdited = (id) => {
@@ -108,16 +114,29 @@ class ShopCompany extends React.PureComponent {
                 }
             });
         } else {
-
-            newItems.push(newItem);
-
-            isoFetch("http://localhost:3000/items", {
-                method: 'POST',
-                body: JSON.stringify(newItem),
-                headers: {
-                "Content-type": "application/json; charset=UTF-8"
-                }
-            });
+            let pageNumber = parseInt(this.props.match.params.pageNumber);
+            if (this.state.pagination && pageNumber!==this.state.pages) {
+                isoFetch("http://localhost:3000/items", {
+                    method: 'POST',
+                    body: JSON.stringify(newItem),
+                    headers: {
+                        "Content-type": "application/json; charset=UTF-8"
+                    }
+                })
+                    .then(response => response.json())
+                    .then(json => console.log(json));
+            } else {
+                newItems.push(newItem);
+                isoFetch("http://localhost:3000/items", {
+                    method: 'POST',
+                    body: JSON.stringify(newItem),
+                    headers: {
+                        "Content-type": "application/json; charset=UTF-8"
+                    }
+                })
+                    .then(response => response.json())
+                    .then(json => console.log(json));
+            }
         }
         this.setState({items: newItems, mode: 0});
     };

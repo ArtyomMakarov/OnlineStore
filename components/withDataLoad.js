@@ -3,10 +3,9 @@ import isoFetch from 'isomorphic-fetch';
 
 let withDataLoad = (fetchConfig,propName) => Component => {
 
-    class ComponentWithDataLoad extends React.PureComponent {
+    class ComponentWithDataLoad extends React.Component {
 
         componentDidMount = () => {
-         // this.getLength();
           this.loadData();
 
         };
@@ -16,7 +15,6 @@ let withDataLoad = (fetchConfig,propName) => Component => {
           combinedProps: null, // исходные пропсы, переданные HOC-у, плюс пропс propName с загруженными данными
         };
 
-      
         fetchError = (errorMessage) => {
           console.error(errorMessage);
         };
@@ -28,21 +26,6 @@ let withDataLoad = (fetchConfig,propName) => Component => {
           });
         };
 
-        // getLength = async() => {
-        //     try {
-        //         let response=await isoFetch(fetchConfig.URL, fetchConfig);
-        //         if (!response.ok) {
-        //             throw new Error("fetch error " + response.status);
-        //         }
-        //         let data=await response.json();
-        //         this.setState({combinedProps: {...this.state.combinedProps,itemsLength: data.length}});
-        //         console.log(this.state.combinedProps);
-        //     }
-        //     catch ( error )  {
-        //         this.fetchError(error.message);
-        //     }
-        // };
-      
         loadData = async () => {
       
           try {

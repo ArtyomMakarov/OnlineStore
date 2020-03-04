@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
+import isoFetch from 'isomorphic-fetch';
 
 import {itemButtonAdd} from '../redux/basketAC';
 
@@ -9,9 +10,8 @@ import {voteEvents} from "./events";
 
 class ShopItem extends React.PureComponent {
 
-    static proptypes = {
+    static propTypes = {
         item: PropTypes.object.isRequired,
-        items: PropTypes.array.isRequired,
     };
 
     state = {
@@ -27,7 +27,21 @@ class ShopItem extends React.PureComponent {
     };
 
     addItemToBasket = () => {
-        this.props.dispatch(itemButtonAdd(this.props.item));
+        let arr = [];
+        function isNegative(number) {
+            return number<0;
+        }
+        this.props.basket.basketItems.forEach((item) => {
+            if(item.id == this.props.item.id) {
+                alert('Товар уже есть в корзине!');
+                arr.push(1);
+            } else {
+                arr.push(-1);
+            }
+        });
+         if (arr.every(isNegative)) {
+             this.props.dispatch(itemButtonAdd(this.props.item));
+         }
     };
 
     render() {

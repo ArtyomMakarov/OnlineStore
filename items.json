@@ -1,8 +1,9 @@
 {
+  "basketItems": [],
   "items": [
     {
       "name": "Телевизор Xiaomi MI TV 4S 4",
-      "price": 1000,
+      "price": 1001,
       "img": "/img/4f0c6bfac7c079a9d16553db5f79e26b.jpeg",
       "id": "5.733",
       "info": "43' 3840x2160 (4K UHD), матрица IPS, частота матрицы 50 Гц, Smart TV (Android TV), HDR, Wi-Fi"
@@ -71,7 +72,7 @@
       "info": "55' 3840x2160 (4K UHD), матрица VA, частота матрицы 50 Гц, индекс динамичных сцен 1900, Smart TV (Samsung Tizen), HDR, Wi-Fi"
     },
     {
-      "name": "Телевизор Xiaomi MI TV 4S 43",
+      "name": "Телевизор Xiaomi MI TV 4S",
       "price": 904,
       "img": "/img/4f0c6bfac7c079a9d16553db5f79e26b.jpeg",
       "id": "52.733",
@@ -226,7 +227,7 @@
     },
     {
       "name": "Телевизор Thomson T32RTL5130",
-      "price": 2350,
+      "price": 2351,
       "img": "/img/c71d624ec102b9792dbc52bb416d78f8.png",
       "id": "577.7042",
       "info": "32' 1366x768 (HD), частота матрицы 50 Гц, Smart TV (Android), Wi-Fi"

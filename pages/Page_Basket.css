@@ -1,0 +1,53 @@
+.basketPage{
+    width: 80%;
+    margin: 30px auto;
+}
+
+.shopBasketName{
+    color: #b3b7bb;
+    font-size: 32px;
+}
+
+.basketName{
+    font-size: 36px;
+}
+
+.basket-table-wrapper{
+    width: 100%;
+}
+
+.basketTable{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.basketImg{
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.showItems{
+    display: block;
+    width: 140px;
+    text-decoration: none;
+    border: 1px solid;
+    background: #7dbf26;
+    border-radius: 3px;
+    color: white;
+    margin: 0 auto;
+    padding: 9px 17px;
+    font-size: 14px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+}
+
+.showItems:hover{
+    background: #58891e;
+}
+
+
+
+
+

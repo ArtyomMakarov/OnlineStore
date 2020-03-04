@@ -5,12 +5,20 @@ import {connect} from 'react-redux';
 
 class BasketButton extends React.Component{
 
+    state = {
+      basketItemsLength: this.props.basket.basketItems.length,
+    };
+
+    componentDidMount =() => {
+      this.setState({basketItemsLength: 0})  ;
+    };
+
     render() {
-        let itemsNumber = this.props.basket.basket.length;
+        console.log(this.props.basket.basketItems);
         return(
             <div className="basket-wrapper">
                 <NavLink to="/basket" className="PageLink" activeClassName="ActivePageLink">Корзина</NavLink>
-                <div className="itemsNumber" hidden={!itemsNumber}>{itemsNumber}</div>
+                <div className="itemsNumber" hidden={!this.props.basket.basketItems.length}>{this.props.basket.basketItems.length}</div>
             </div>
         )
     }

@@ -1,9 +1,9 @@
 import React from 'react';
-
 import ShopCompany from './ShopCompany';
 import { withDataLoad } from './withDataLoad';
+import {withRouter} from 'react-router-dom';
 
-class ShopRoot extends React.PureComponent {
+class ShopRoot extends React.Component {
 
     fetchConfig={
         URL: "http://localhost:3000/items",
@@ -13,15 +13,16 @@ class ShopRoot extends React.PureComponent {
         },
     };
 
-    ShopCompanyWithData=withDataLoad(this.fetchConfig,"companyData")(ShopCompany);
+    ShopPagesWithData=withDataLoad(this.fetchConfig,"companyData")(withRouter(ShopCompany));
 
     render() {
-
-        let ShopCompanyWithData=this.ShopCompanyWithData;
-        return <ShopCompanyWithData /> ;
-
+        let ShopPagesWithData=this.ShopPagesWithData;
+        return (
+            <div>
+                <ShopPagesWithData/>
+            </div>
+        );
     }
-
 }
 
 export default ShopRoot;
