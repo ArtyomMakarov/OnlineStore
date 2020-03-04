@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
-import isoFetch from 'isomorphic-fetch';
 
 import {itemButtonAdd} from '../redux/basketAC';
 
@@ -45,7 +44,6 @@ class ShopItem extends React.PureComponent {
     };
 
     render() {
-        console.log("ShopItem id=" + this.state.item.id + "render");
         return (
             <tr>
                 <td className='cell'><img src={this.props.item.img} className="itemImg"/></td>

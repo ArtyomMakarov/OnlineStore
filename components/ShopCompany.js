@@ -12,7 +12,7 @@ class ShopCompany extends React.PureComponent {
 
     state = {
         items: [],
-        itemsLength: 0,
+        itemsLength: 0,                //колличество товаров, нужно для пагинатора
         itemsPerPage: 10,
         pagination: false,
         mode: 0,                        // 0-start, 1-edit, 2-add
@@ -21,7 +21,6 @@ class ShopCompany extends React.PureComponent {
     };
 
     componentDidMount = () => {
-        console.log(this.props.match.params.pageNumber);
         this.loadPages();
         this.getItemsLength();
         voteEvents.addListener('EEditItem',this.itemEdited);
@@ -37,9 +36,8 @@ class ShopCompany extends React.PureComponent {
         voteEvents.removeListener('EChangeItem', this.editItem);
     };
 
-    componentWillReceiveProps = () => {
-        console.log(this.props.match.params.pageNumber);
-        this.loadPages();
+    componentWillReceiveProps = (newProps) => {
+        this.loadPages(newProps);
     };
 
     getItemsLength = () => {
@@ -58,8 +56,8 @@ class ShopCompany extends React.PureComponent {
             })
     };
 
-    loadPages = () => {
-            let pageNumber = parseInt(this.props.match.params.pageNumber);
+    loadPages = (newProps) => {
+            let pageNumber = parseInt(newProps?newProps.match.params.pageNumber:this.props.match.params.pageNumber);
             if (pageNumber>0) {
                 isoFetch(`http://localhost:3000/items?_page=${pageNumber}`)
                     .then(response => {
@@ -194,8 +192,6 @@ class ShopCompany extends React.PureComponent {
     };
 
     render() {
-        console.log("ShopCompany render");
-
         var itemsCode = this.state.items.map(item => <ShopItem key={item.id} item={item}/>);
         var item = this.state.items.find(item => item.id == this.state.id);
         var newItem = {

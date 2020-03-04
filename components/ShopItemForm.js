@@ -51,7 +51,7 @@ class ShopItemForm extends React.PureComponent {
         this.newPriceRef=ref;
     };
 
-    validFunc = (e) => {
+    validFunc = () => {
         if(this.newNameRef.value && this.newInfoRef.value && this.newImgRef.value && this.newPriceRef.value) {
             this.setState({isValid: true});
         } else {
